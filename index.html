@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<hml lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>MASTER EN CSS</title>
+        <link rel="icon" type="image/x-icon" href="/img/logo.png">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+    </head>
+
+    <body>
+        <header id="header">
+            <!-- inicio de la cabecera -->
+            <div id="logotipo">
+                <img src="/img/logo.png" alt="logotipo" />
+            </div>
+            <h1>
+                <a href="/index.html">Mi Pagina con CSS</a>
+            </h1>
+            <!-- fin de la cabecera -->
+        </header>
+        <!-- MENU DE NAVEGACION -->
+        <nav id="nav1">
+            <ul>
+                <li><a href="index.html">INICIO</a>
+
+                </li>
+                <li><a href="index.html">CONTENIDO</a></li>
+                <li><a href="index.html">REQUERIMIENTO</a></li>
+                <li><a href="index.html">LENGUAJES</a>
+                    <ul id="menulenguajes">
+                        <li> <a href="index.html">HTML</a></li>
+                        <li> <a href="index.html">CSS</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">FRAMEWORKS</a>
+                    <ul id="menuframewoks">
+                        <li> <a href="index.html">SASS</a></li>
+                        <li> <a href="index.html">LESS</a></li>
+                        <li> <a href="index.html">BOOTSTRAP 4</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">PROYECTOS</a></li>
+                <li><a href="index.html">BLOG</a></li>
+                <li><a href="index.html">CONTACTO</a></li>
+
+            </ul>
+            <!-- para limpiar los flotantes -->
+
+        </nav>
+
+        <!-- fin del menu -->
+        <!-- INICIO CONTENedor menu -->
+        <div id="contenido">
+            <!-- inicio barra lateral -->
+            <aside id="barralateral">
+                <!--etiqueta decuanda para crear un menu lateral-->
+                <div class="widget" id="login">
+                    <!-- por lo general a los div que van en un menu lateral se les llaman widget poreso le ponemos ese nombre a la clase-->
+                    <h3>Entrar a la Web</h3>
+                    <form>
+                        <label>Usuario:</label>
+                        <input type="text">
+
+                        <label>Contraseña:</label>
+                        <input type="password">
+                        <input type="submit" value="entrar">
+                    </form>
+                    <a href="#">Zona de Alumnos</a>
+                    <a href="#">Zona del Profesor</a>
+                    <a href="#">Acceso a Calificaciones</a>
+                </div>
+                <div class="widget" id="aulavirtual1">
+                    <h3 id="blue">Aula Virtual 1</h3>
+                    <form>
+                        <label>Usuario:</label>
+                        <input type="text">
+
+                        <label>Contraseña:</label>
+                        <input type="password">
+
+                        <input type="submit" value="entrar">
+                    </form>
+
+
+                </div>
+
+                <div class="widget" id="aulavirtual2">
+
+                    <h3 id="red">Aula Virtual 2</h3>
+                    <form>
+                        <label>Usuario:</label>
+                        <input type="text">
+
+                        <label>Contraseña:</label>
+                        <input type="password">
+
+                        <input type="submit" value="entrar">
+                    </form>
+                </div>
+                <div class="widget" id="enlacesinteres">
+                    <h3>Enlaces de Interes</h3>
+                    <ul>
+                        <li><a href="index.html">Master en JavaScript</a></li>
+                        <li><a href="index.html">Master en PHP</a></li>
+                        <li><a href="index.html">Master en Frameworks</a></li>
+                        <li><a href="index.html">Master en Vue</a></li>
+                    </ul>
+                </div>
+
+            </aside>
+            <!-- <div class="clearfix"></div> -->
+
+            <!-- fin barra lateral -->
+
+
+            <!--  inicio de las secciones-->
+            <div id="section">
+                <section>
+                    <span id="stickers">
+                        <img class="sticker1" src="/img/scotch.png" alt="Pegatina" />
+                        <img class="sticker2" src="/img/scotch.png" alt="Pegatina" />
+                    </span>
+                    <h2 class="titulo">NOTICIAS DE FRONTEND</h2>
+                    <article class="article">
+                        <span class="icon">
+                            a
+                        </span>
+                        <p>
+                            <a href="#">¿Qué es el <i>FRONTEND</i>?</a>
+                            <br>Todavía hay muchas personas que no saben que es lo que significa frontend en el ámbito
+                            web, es normal en casos, en los que las personas no son profesionales del sector web, lo
+                            malo es cuando te encuentras personas que sí, son profesionales del sector y aún no tienen
+                            muy claro lo que significa, y es más,hay casos también que suelen creer que lo entienden
+                            cuando en realidad tienen una idea equivocada.
+                        </p>
+                        <span class="date">[18-03-2022. Rodolfo Raygoza] </span>
+                    </article>
+                    <article class="article">
+                        <span class="icon">
+                            a
+                        </span>
+                        <p>
+                            <a href="#">Partiendo de la base</a>
+                            <br>«Front-end», conocido al español y latino como «frontend» y en su traducción algo así
+                            como frente o fachada final. Es una especialidad para el desarrollo web, que trabaja la
+                            interfaz web y hace que el usuario pueda interactuar con nuestra web.
+                            Está orientado a lenguaje de marcas y al lenguaje de programación web de ejecución en
+                            equipos clientes, sin necesidad de uso de servidores externos. Casi todo lo que ves en la
+                            pantalla cuando accedes a una web es desarrollo frontend, la estructuración de los
+                            apartados, tamaños, márgenes entre estructuras, tipos de letra, colores, adaptación para
+                            distintas pantallas, los efectos de ratón, teclado, movimientos, desplazamientos, efectos
+                            visuales…Esto sería la base origen en la que se centra la especialidad frontend, <b>dar
+                                formato a contenidos, desarrollo del aspecto de la web y manipular resultados de datos
+                                obtenidos.</b>
+                        </p>
+                        <span class="date">[18-03-2022. Rodolfo Raygoza] </span>
+                    </article>
+                    <article class="article">
+                        <span class="icon">
+                            a
+                        </span>
+                        <p>
+                            <a href="#">No Confundan los <b>tipos de programación</b></a>
+                            <br>La programación frontend como origen, siempre va a estar orientada a crear interfaces
+                            web, crear aplicaciones de interfaz sin ir mas allá de lo que significa la programación
+                            interna (desarrollo backend).
+                        </p>
+                        <span class="date">[18-03-2022. Rodolfo Raygoza] </span>
+                    </article>
+                    <article class="article">
+                        <span class="icon">
+                            a
+                        </span>
+                        <p>
+                            <a href="#">Lenguajes FRONTEND</a>
+                        <ul>
+                            <br>
+                            <li>
+                                HTML
+                            </li>
+                            <li>
+                                CSS
+                            </li>
+
+                            <li>
+                                JavaScript
+                            </li>
+                        </ul>
+                        </p>
+                        <span class="date">[18-03-2022. Rodolfo Raygoza] </span>
+                    </article>
+                </section>
+            </div>
+            <!-- ------------------ -->
+            <div id="section">
+                <section>
+                    <span id="stickers">
+                        <img class="sticker1" src="/img/scotch.png" alt="Pegatina" />
+                        <img class="sticker2" src="/img/scotch.png" alt="Pegatina" />
+                    </span>
+                    <h2 class="titulo red">NOTICIAS BACKEND</h2>
+                    <article class="article">
+                        <span class="icon">
+                            a
+                        </span>
+                        <p>
+                            <a href="#">Qué es desarrollo <i>backend</i>?</a>
+                            <br>Está enfocado sólo a lenguajes de programación, orientado a funcionamientos, trabajar
+                            con datos internos, crear aplicaciones que controlen datos de la base de datos de la web,
+                            para poder ser consultados por el usuario. Creación de funciones que realicen una acción o
+                            acciones que controlen el buen funcionamiento de las aplicaciones, Crear estructuras de
+                            operaciones y cálculos para devolver unos resultados. Es una especialidad más orientada a
+                            una programación menos intuitiva y en ocasiones algo más compleja, ambas especialidades van
+                            a ir ligadas, aunque no nos meteremos más a fondo porque sería ya un tema que sale de
+                            nuestro dominio.
+
+                        </p>
+                        <span class="date">[18-03-2022. Rodolfo Raygoza] </span>
+                    </article>
+                    <article class="article">
+                        <span class="icon">
+                            a
+                        </span>
+                        <p>
+                            <a href="#">Lenguajes BACKEND</a>
+                        <ul>
+                            <br>
+                            <li>
+                                PHP
+                            </li>
+                            <li>
+                                PHYTON
+                            </li>
+
+                            <li>
+                                Java
+                            </li>
+                            <li>
+                                Ruby
+                            </li>
+                            <li>
+                                JavaScript(usando Node.js)
+                            </li>
+                        </ul>
+
+                        </p>
+                        <span class="date">[18-03-2022. Rodolfo Raygoza] </span>
+                    </article>
+
+                </section>
+            </div>
+
+            <div id="section">
+                <section>
+                    <span id="stickers">
+                        <img class="sticker1" src="/img/scotch.png" alt="Pegatina" />
+                        <img class="sticker2" src="/img/scotch.png" alt="Pegatina" />
+                    </span>
+
+                    <h2 class="titulo yellow">ALGO IMPORTANTE...</h2>
+                    <article class="article">
+                        <span class="icon">
+                            a
+                        </span>
+                        <p>
+                            <a href="#">Una buena combinacion</a>
+                       <br>El desarrollo de proyectos para un frontend, en la mayoría de ocasiones van a ir muy de la mano del diseño, esto quiere decir que no está de más ampliar conocimientos de teórica de diseño y controlar aplicaciones como illustrator, photoshop entre otros, para la manipulación, retocado de imágenes, diseños vectoriales, ilustraciones etc…
+                       También ayuda mucho, el controlar y dominar programaciones de lado servidor tales como PHP y Python entre varios.
+                       <br><br>Ten en cuenta que en este trabajo se trabaja muy de la mano con este tipo de tecnologías y todo conocimiento es muy bien recibido a la hora de poder desarrollar proyectos de gran envergadura y no depender tanto del equipo de expertos en programación (desarrolladores backend).
+
+                       <br><br>También es conveniente tener un grupo de herramientas de uso profesional específico como son frameworks, junto con editores especiales entre otros…todo para dar comodidad, ayudar a ahorrar tiempos de trabajo y en la reutilización de código para un desarrollo optimizado.
+
+
+                        </p>
+                        <span class="date">[18-03-2022. Rodolfo Raygoza] </span>
+                    </article>
+            
+                </section>
+            </div>
+            <aside id="frase">
+
+                <div>
+
+                    <p>Nunca te rindas, el camino puede ser dificil, quizas pienses más de una vez en rendirte pero si
+                        persistes y luchas por esa meta, objetivo o sueño el resultado te hara sentir pleno...</p>
+                </div>
+                <a>Frase Motivadora del Dia :)</a>
+            </aside>
+            <div class="clearfix"></div>
+
+            <div id="history">
+                <a href="#">[Ver Historico de Noticias]</a>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <!-- creamos el footer -->
+        <footer id="footer">
+            <p>&copy; Desarrollado por Rodolfo Raygoza Osuna</p>
+            <p>Para ver mas de mis proyectos visita <a
+                    href="https://github.com/RodoR65?tab=repositories">github.com/RodoR65</a></p>
+        </footer>
+
+
+
+
+
+    </body>
+</hml>

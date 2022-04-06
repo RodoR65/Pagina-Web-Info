@@ -1,0 +1,413 @@
+/* FUENTES */
+@font-face {
+    font-family: "nevis";
+    src: url("/css/fonts/nevis.eot");
+    /*  para reparar en caso de que el navegaddfor no acepte esa fuente */
+    src: url("/css/fonts/nevis.eot?#iefix") format("embedded-opentype"),
+            url("/css/fonts/nevis.woff") format("woff"),
+            url("/css/fonts/nevis.ttf") format("truetype"),
+            url("/css/fonts/nevis.svg") format("svg");
+            font-weight:normal;
+            font-style: normal;
+}
+@font-face{
+    font-family: "fajala";
+    src:url("/css/fonts/FjallaOne-Regular.ttf") format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face{
+    font-family: "icons";
+    src:url("/css/fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format('svg'),
+    url("/css/fonts/websymbols-regular-webfont.eot");
+    /* src:url("/css/fonts/websymbols-regular-webfont.eot?#iefix")format("embedded-opentype"), */
+    src:url("/css/fonts/websymbols-regular-webfont.woff") format("woff"),
+    url("/css/fonts/websymbols-regular-webfont.ttf") format("truetype"); 
+    /* font-weight:no;
+    font-style:normal; */
+}
+/* estilos generales */
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    background-image:url("/img/paven.png");
+}
+a{
+    color:#70b231;
+    text-decoration: none;
+}
+a:hover{
+    color:#1d3507;
+   
+}
+a:visited{
+    color:rgb(240, 72, 72);
+    
+}
+#blue{
+    color:blue !important;
+    /* en ambos selectores se les pone la propiedad important porque mas abajo le damos estilos con color gris entonces se sobreescribiria y ya con el important el navegador le da mas prioridad */
+}
+#red{
+    color:red !important;
+}
+.red{
+    color:red !important; 
+}
+.yellow{
+    color:rgb(173, 173, 50) !important;
+}
+
+/* cabecera */
+#header{
+    min-width:1024px;
+    width:100%;
+    height:250px;
+    margin:0px auto;
+}
+#header a{
+    text-decoration:none;
+}
+#header #logotipo{
+    width:770px;
+    margin:auto;
+    padding-top:20px;
+}
+#header #logotipo img{
+    display:block;
+    text-align:center;
+    margin:0px auto;
+    width:140px;
+}
+#header h1{
+    text-align:center;
+    margin:0px;
+    font-size: 40px;
+    font-family: "nevis";
+    text-transform: uppercase;
+    letter-spacing:4px;
+    margin-top:10px;
+    text-shadow: 0px 2px 1px #333333;
+    /*  ahora le daremos un efecto hover */
+    transition:all 300ms;
+}
+#header h1:hover{
+    text-shadow: 2px 2px 1px #333333 , 0px 0px 4px #70b231;
+}
+#header h1 a{
+   color:#70b231;
+}
+/* BARRA DE NAVEGACION */
+#nav1{
+  
+    width:100%;
+    background-color: #333333;
+    height: 40px;
+    font-family: sans-serif,Arial, Helvetica, sans-serif;
+font-size:14px;
+box-shadow: 0px 0px 2px gray;
+    
+}
+#nav1 ul {
+list-style: none;
+margin: 0px auto;
+
+width:1103px;
+}
+#nav1 > ul>li{
+    line-height: 40px;
+    float:left;
+    border-right: 1px solid gray;
+}
+#nav1 > ul > li a{
+    display: block;
+color:white;
+text-decoration:none;
+padding-left: 20px;
+padding-right: 20px;
+
+}
+#nav1 >ul >li > a:first-child{
+    border-left:1px solid gray;
+}
+#nav1 > ul > li:hover{
+    background:#70b231;
+    box-shadow: 0px 0px 4px green inset; /* el inset signifinica que le sara el sombreado por dentro*/
+    transition: all 1s;
+    
+}
+/*  en este punto creamos el menu desplegable para el menu lenguajes y frameworks solo que se aplica los estilos a todos lo que se hace posteriormente a esta seccion es ocultar ese menu despegalble con displat:none */
+/* FIN MENU DE NAVEGACION */
+/* MENU DESPLEGABLE */
+#nav1 > ul >li> ul{
+    display:none;
+    /*  le daremos postion:absolute para que no desfigure el menu solamente se muestre */
+    position:absolute;
+    
+    width: 150px;
+    box-shadow:0px 2px 4px gray;
+     z-index: 1; /*para que se superponga encima de los elementos */
+
+}
+/* ahora mostraremos el menu despegable al hacer hover en el primer ul del elemento li */
+#nav1 >ul > li:hover > ul{
+    display: block;
+
+}
+#nav1 >ul > li:hover > ul > li{
+    background: #f2f1f0;
+    color:white;
+    padding: 3px; 
+    line-height: 35px;
+    border-bottom: 1px solid #D6D6D6;
+    font-size: 13px;
+    
+}
+#nav1 >ul > li:hover > ul > li > a{
+   
+    color: #666666;
+    
+}
+#nav1 >ul > li:hover > ul > li:hover {
+   background-color: #ccc;
+   box-shadow: 0px 0px 6px #ccc inset;
+   transition:all 1s;
+
+}
+#contenido{
+    width:1250px;
+    min-height:1100px;
+    margin:0px auto;
+    font-family:sans-serif,Arial, Helvetica, sans-serif;
+    
+}
+#barralateral,#frase{
+
+width:200px;
+float:left;
+margin:30px;
+background:white;
+border: 1px solid #ccc;
+box-shadow:0px 2px 2px #666666;
+font-family:sans-serif, Arial, Helvetica, sans-serif;
+}
+#frase{
+    
+    
+    
+    width:180px;
+    padding:10px;
+    font-weight: bold;
+    font-size: 14px;
+    font-style: italic;
+    text-align: justify;
+
+}
+#barralateral li{
+  
+    margin-top:5px;
+    margin-left:10px;
+    margin-bottom:5px;
+    list-style: square;
+}
+#barralateral .widget{
+    display:block;
+    width:180px;
+    margin:5px auto;
+    padding:8px;
+    padding-left: 10px;
+    padding-right:10px;
+    font-size:14px;
+    border-bottom: 1px dashed #333333;
+}
+#barralateral .widget:last-child{
+    margin-bottom:1px solid #333333;
+}
+#barralateral h3{
+    display:block;
+    color:#333333;
+    width:100%;
+    padding-top:2px;
+    margin-bottom:16px;
+    padding-bottom:2px;
+    text-align: center;
+    background:#f2f3f2;
+    border: 1px solid #ccc;
+    /* para quitrar el borde derecho e izquierdo se le pone none */
+    border-left:none;
+    border-right:none;
+
+}
+/* ESTILOS A LOS FORMULARIOS */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select 
+{
+    border:1px solid #C9C9C9;
+    box-shadow: 0px 0px 3px #ccc inset;
+    padding:1px;
+    padding-top:2px;
+    padding-bottom: 2px;
+    color: grey;
+    transition: all 300ms;
+  
+
+}
+/* ahora daremos un focus */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus{
+
+    border:1px solid #70b231;
+    color:black;
+
+}
+/*  ahora le daremos estilo a estiqwuetas buttom y submit */
+input[type="buttom"],
+input[type="submit"],
+input[type="reset"],
+button{
+    display:block;
+    padding:3px;
+    text-align: center;
+    border:1px solid green;
+    border-radius:4px;
+    background-color: #70b237;
+    width:60px;
+    color:black;
+    cursor:pointer;
+    
+}
+/* ahora le daremos un hover a los botones */
+input[type="buttom"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover{
+    box-shadow:0px 0px 2px gray;
+
+
+}
+/*  ahora estilos cuando se mantenga pulsado el boton */
+input[type="buttom"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+button:hover{
+    box-shadow:0px 0px 6px gray inset;
+    text-shadow: 0px 0px 2px white;
+    color:white;
+
+
+}
+/* FORMULARIOS BARRA LATERAL */
+#barralateral .widget label,
+#barralateral .widget input[type="text"],
+#barralateral .widget input[type="password"],
+#barralateral .widget input[type="email"],
+#barralateral .widget a{
+    display:block;
+    width:95%;
+    margin-top:2px;
+    margin-bottom: 2px;
+    
+
+}
+/* ahora estilos a los botones del formulario */
+#barralateral .widget input[type="submit"],
+#barralateral .widget input[type="button"],
+#barralateral .widget button{
+    margin-top:10px;
+    margin-bottom:10px;
+
+}
+/* ahora centraremos todos los elemntos label e input de la barra lateral */
+#barralateral input, label{
+    margin:0px auto;
+    text-align:center;
+}
+/* estilos a las secciones que contienen toda la info */
+#section{
+    float:right;
+    width:75%;
+    font-family: sans-serif,Arial, Helvetica, sans-serif;
+    margin-right: 20px;
+}
+#section .titulo{
+
+    font-size: 25px;
+    margin-bottom: 5px;
+    font-family:"fajala";
+    font-weight:normal;
+    margin-top:-15px;
+    /* para espacio entrer letras */
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom:1px solid #ccc;
+
+}
+/* estilos a los section */
+#section section{
+    margin-top:40px;
+    background:white;
+    padding:20px;
+    border:1px solid #ccc;
+    box-shadow:-2px 0px 3px #666666;
+    color:#333333;
+    font-size:16px;
+    /* aplicamos un overflow:hidden para que todo lo que desborde de los section se oculte */
+}
+/* aplicamos estilos a los article */
+#section .article{
+    margin:10px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+/* estrilos a los span */
+#section .date{
+    color:gray;
+    font-size:15px
+}
+#section #stickers .sticker1,
+#section #stickers .sticker2{
+    position: absolute;
+    margin-top:-38px;
+    z-index: 0;
+
+}
+#section #stickers .sticker2{
+    
+    margin-left: 64%;
+}
+.icon{
+    font-family: "icons";
+    float:left;
+    margin:5px;
+    margin-top:-2px;
+}
+.clearfix{
+    float:none !important;
+    clear:both !important;
+}
+#history{
+    float:right;
+    margin-right:20px;
+    margin-top:10px;
+  
+}
+#footer{
+    width:100%;
+    margin:0px auto;
+    background-color:#333333;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 10px;
+    color: white;
+    font-family: sans-serif;
+    box-shadow: 0px 0px 5px #70b237;
+}
+
