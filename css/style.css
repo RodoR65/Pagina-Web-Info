@@ -17,7 +17,7 @@
     font-style:normal;
 }
 @font-face{
-font-family: "icons";
+    font-family: "icons";
     src:url("fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format('svg'),
     url("fonts/websymbols-regular-webfont.eot");
     src:url("fonts/websymbols-regular-webfont.eot?#iefix")format("embedded-opentype"),
@@ -26,6 +26,7 @@ font-family: "icons";
     font-weight:normal;
     font-style:normal;
 }
+
 /* estilos generales */
 *{
     padding:0px;
